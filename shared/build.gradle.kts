@@ -28,7 +28,15 @@ kotlin {
     }
     
     sourceSets {
-        val commonMain by getting
+        val ktorVersion = "1.6.3"
+        val commonMain by getting {
+            dependencies {
+                // Ktor
+                implementation("io.ktor:ktor-client-core:$ktorVersion")
+                implementation("io.ktor:ktor-client-logging:$ktorVersion")
+                implementation("io.ktor:ktor-client-serialization:$ktorVersion")
+            }
+        }
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test-common"))
