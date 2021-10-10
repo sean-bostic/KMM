@@ -42,6 +42,9 @@ kotlin {
 
                 // koin
                 implementation("io.insert-koin:koin-core:$koin_version")
+
+                // coroutines
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
             }
         }
         val commonTest by getting {
