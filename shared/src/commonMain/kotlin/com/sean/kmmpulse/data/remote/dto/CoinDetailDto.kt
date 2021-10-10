@@ -1,6 +1,5 @@
 package com.sean.kmmpulse.data.remote.dto
 
-import com.sean.kmmpulse.data.model.Coin
 import com.sean.kmmpulse.data.model.CoinDetail
 import com.sean.kmmpulse.data.model.TeamMember
 

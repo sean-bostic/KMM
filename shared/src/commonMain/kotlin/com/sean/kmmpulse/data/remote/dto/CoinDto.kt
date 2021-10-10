@@ -1,5 +1,7 @@
 package com.sean.kmmpulse.data.remote.dto
 
+import com.sean.kmmpulse.data.model.Coin
+
 data class CoinDto(
     val id: String,
     val is_active: Boolean,
@@ -9,3 +11,13 @@ data class CoinDto(
     val symbol: String,
     val type: String
 )
+
+fun CoinDto.toCoin() : Coin {
+        return Coin(
+            id = id,
+            isActive = is_active,
+            name = name,
+            rank = rank,
+            symbol = symbol
+        )
+}
