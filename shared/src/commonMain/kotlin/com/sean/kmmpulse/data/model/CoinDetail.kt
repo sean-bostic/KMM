@@ -11,3 +11,5 @@ data class CoinDetail(
     val team: List<TeamMember>
 )
 
+
+
