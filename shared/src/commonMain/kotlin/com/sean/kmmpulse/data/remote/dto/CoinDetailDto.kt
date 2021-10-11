@@ -1,7 +1,7 @@
 package com.sean.kmmpulse.data.remote.dto
 
-import com.sean.kmmpulse.data.model.CoinDetail
-import com.sean.kmmpulse.data.model.TeamMember
+import com.sean.kmmpulse.domain.model.CoinDetail
+import com.sean.kmmpulse.domain.model.TeamMember
 
 data class CoinDetailDto(
     val description: String,

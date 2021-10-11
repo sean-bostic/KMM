@@ -1,7 +1,9 @@
 package com.sean.kmmpulse.data.remote.dto
 
-import com.sean.kmmpulse.data.model.Coin
+import com.sean.kmmpulse.domain.model.Coin
+import kotlinx.serialization.Serializable
 
+@Serializable
 data class CoinDto(
     val id: String,
     val is_active: Boolean,
