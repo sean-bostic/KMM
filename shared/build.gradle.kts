@@ -4,6 +4,7 @@ plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
     id("com.android.library")
+    kotlin("plugin.serialization") version "1.5.31"
 }
 
 version = "1.0"
